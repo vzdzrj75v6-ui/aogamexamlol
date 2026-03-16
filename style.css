@@ -1,0 +1,67 @@
+body{
+margin:0;
+font-family:sans-serif;
+background:black;
+color:white;
+text-align:center;
+}
+
+#matrix{
+position:fixed;
+top:0;
+left:0;
+z-index:-1;
+}
+
+.container{
+margin-top:150px;
+}
+
+.logo{
+font-size:50px;
+color:#00aaff;
+letter-spacing:5px;
+}
+
+input{
+width:250px;
+padding:12px;
+border-radius:10px;
+border:none;
+margin-top:20px;
+}
+
+button{
+margin-top:15px;
+padding:12px 25px;
+border:none;
+border-radius:10px;
+background:#0077ff;
+color:white;
+font-size:16px;
+}
+
+.spinner{
+border:6px solid rgba(255,255,255,0.2);
+border-top:6px solid #00aaff;
+border-radius:50%;
+width:40px;
+height:40px;
+animation:spin 1s linear infinite;
+margin:auto;
+}
+
+@keyframes spin{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}
+
+#done{
+font-size:70px;
+color:#00ffcc;
+margin-top:20px;
+}
+
+.hidden{
+display:none;
+}
