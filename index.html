@@ -17,53 +17,45 @@
 
 <div class="app">
 
-<div class="logo">
+<div class="header">
 
 ENGINE
 
 </div>
 
-<div id="loginBox" class="card">
+<div id="login" class="glass">
 
-<input id="keyInput" placeholder="Enter Key">
+<input id="key" placeholder="Enter Key">
 
 <button onclick="login()">LOGIN</button>
 
 </div>
 
-<div id="profile" class="card hidden">
+<div id="profile" class="glass hidden">
 
 <div class="title">PROFILE</div>
 
-<p id="user"></p>
+<div id="user"></div>
 
-<p id="expire"></p>
-
-</div>
-
-<div id="engineBox" class="card hidden">
-
-<div class="title">ENGINE CODE</div>
-
-<textarea id="codeBox" placeholder="Paste code here"></textarea>
-
-<button onclick="runCode()">RUN CODE</button>
-
-<button onclick="openGame()">OPEN GAME</button>
+<div id="expire"></div>
 
 </div>
 
-<div id="loading" class="hidden">
+<div id="engine" class="glass hidden">
 
-<div class="loader"></div>
+<div class="title">ENGINE</div>
+
+<textarea id="code"></textarea>
+
+<button onclick="runEngine()" class="run">RUN ENGINE</button>
+
+<button onclick="openGame()" class="game">OPEN GAME</button>
 
 </div>
 
-<div id="success" class="hidden">
+<div id="loader" class="hidden">
 
-<div class="checkmark">✔</div>
-
-<p>Đã Xong</p>
+<div class="ring"></div>
 
 </div>
 
