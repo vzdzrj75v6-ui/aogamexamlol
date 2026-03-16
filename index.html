@@ -1,50 +1,77 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>ENGINE</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
 <canvas id="matrix"></canvas>
 
-<div class="container">
+<div class="app">
 
-<h1 class="logo">ENGINE</h1>
+<div class="logo">
 
-<div class="login-box">
+ENGINE
 
-<input id="keyInput" placeholder="Enter your key">
+</div>
+
+<div id="loginBox" class="card">
+
+<input id="keyInput" placeholder="Enter Key">
 
 <button onclick="login()">LOGIN</button>
 
 </div>
 
-<div id="profile" class="hidden">
+<div id="profile" class="card hidden">
 
-<h3>PROFILE</h3>
+<div class="title">PROFILE</div>
 
 <p id="user"></p>
+
 <p id="expire"></p>
 
-<button onclick="openGame()">Kích Hoạt Game</button>
+</div>
+
+<div id="engineBox" class="card hidden">
+
+<div class="title">ENGINE CODE</div>
+
+<textarea id="codeBox" placeholder="Paste code here"></textarea>
+
+<button onclick="runCode()">RUN CODE</button>
+
+<button onclick="openGame()">OPEN GAME</button>
 
 </div>
 
 <div id="loading" class="hidden">
 
-<div class="spinner"></div>
+<div class="loader"></div>
 
 </div>
 
-<div id="done" class="hidden">✔</div>
+<div id="success" class="hidden">
+
+<div class="checkmark">✔</div>
+
+<p>Đã Xong</p>
+
+</div>
 
 </div>
 
 <script src="matrix.js"></script>
-<script src="script.js"></script>
+<script src="engine.js"></script>
 
 </body>
+
 </html>
