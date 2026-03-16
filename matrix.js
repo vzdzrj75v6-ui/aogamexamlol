@@ -5,13 +5,16 @@ canvas.height=window.innerHeight;
 canvas.width=window.innerWidth;
 
 const letters="01ENGINECODE";
-const fontSize=16;
+const fontSize=14;
+
 const columns=canvas.width/fontSize;
 
 const drops=[];
 
 for(let x=0;x<columns;x++){
+
 drops[x]=1;
+
 }
 
 function draw(){
@@ -40,4 +43,4 @@ drops[i]++;
 
 }
 
-setInterval(draw,33);
+setInterval(draw,35);
